@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 # PQAI——基于语义匹配的AI专利检索引擎
->本项目为从专利代理师视角出发重构的PQAI中文技术文档作品集，Fork自[pqaidevteam/pqai](https://github.com/pqaidevteam/pqai)。
+>本项目为从专利代理师视角出发，对原版 PQAI 文档进行重构与汉化的技术文档作品集，Fork自[pqaidevteam/pqai](https://github.com/pqaidevteam/pqai)。
 
 PQAI是一款开源的AI专利检索引擎。你只需输入自然语言描述的技术方案，系统便会基于语义匹配，从专利数据库（目前仅限美国专利）及其他技术文献中，返回按相似度排序的对比文件列表。PQAI还支持将检索会话快照作为检索报告导出并分享给他人。
 
