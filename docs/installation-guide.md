@@ -15,7 +15,7 @@
 - 若你的系统已安装了git，可以在终端运行以下命令进行验证：  
 `git --version`  
 若运行上述命令后返回git版本号，说明git已安装，示例：  
-![git版本截图](images/git-version.png)
+  ![git版本截图](images/git-version.png)
 
 - 若你的系统未安装git或上述命令出现错误，可以在终端运行以下命令来安装git，或者通过git的[官方安装网址](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git)进行安装。  
 ` sudo apt install git`
@@ -27,8 +27,8 @@
 
   ***提示**：若上述命令运行错误，可以尝试将上述命令中的`python3`替换为`python`，若替换有效则后续所有命令均需应用该替换。*  
 
-  若运行上述命令后返回Python3版本号，说明Python3已安装，示例：
-![Python版本截图](images/python-version.png)
+  若运行上述命令后返回Python3版本号，说明Python3已安装，示例：  
+  ![Python版本截图](images/python-version.png)
 
 - 若你的系统未安装Python3或上述命令出现错误，可以在终端运行以下命令，或者通过Python的[官方安装网址](https://www.python.org/downloads/)进行安装。  
 `sudo apt install python3`
@@ -98,7 +98,7 @@
 `source pqai-venv310/bin/activate`
 
 #### 2. 获取PQAI所需的Python依赖
->***注意***：此操作前提需确保终端处于 PQAI 源码目录，且虚拟环境已激活（终端提示符开头有 `(pqai-venv310)`）。示例：  
+>***注意***：此操作前提需确保终端处于 PQAI 源码目录，且虚拟环境已激活（终端提示符开头有 `(pqai-venv310)`）。示例：   
 ![虚拟环境截图](images/pqai-venv310.png)
 
 - 方式一：在终端输入以下命令来下载PQAI所需的Python依赖：  
@@ -164,7 +164,7 @@
 ##  常见问题及解决方式
 
 ### 1. Step2中运行获取Python依赖命令后，返回报错“没有那个文件或目录”
-- 报错示例：
+- 报错示例：  
 ![报错1截图](images/error1.png)
 
 - 问题原因：  
@@ -190,7 +190,7 @@ pip 从 PyPI 官方源下载依赖时网络超时。
     ```  
 
 ### 3. Step2中Python依赖下载报错`No matching distribution found for keras==3.13.2`、或者报错`ERROR: No matching distribution found for tensorflow==2.9.3`  
-- 报错示例：
+- 报错示例：  
 ![报错3截图](images/error3.png)
 - 问题原因：  
   官方最新master 分支的 `requirements.txt` 中， `tensorflow==2.9.3` 与 `keras==3.13.2` 对 Python 版本的要求相互冲突，在任何 Python 版本下都无法同时满足。此问题与下载源或系统Python配置无关。
