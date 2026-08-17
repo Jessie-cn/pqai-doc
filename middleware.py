@@ -78,6 +78,10 @@ class TokenRegistry:
             logger.error("Error reading tokens from MongoDB: %s", e)
     
     def has_token(self, token):
+        if token in self.token_quotas:
+            return True
+        # Token not found, reload in case it was recently added
+        self.load_all_tokens()
         return token in self.token_quotas
     
     def get_quota(self, token):
